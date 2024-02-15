@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/72df2c835e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Graphic Designer|Freelancer</p>
+                <h1>Hi, I'm <span>Elton</span> John<br>from The Philippines</h1>
+            </div>
+        </div>
+    </div>
+
+<!-- ----------about-------------- -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About <span>Elton</span></h1>
+                    <p>Elton John A. De Torres, is a college student with a handful of skills, either<br>
+                        self-taught or learned skills from seminars/webinars, trainings, and udemy<br>
+                        courses. As he proved on his experience, he can learn fast, manage time<br>
+                        effectively, follow instructions, and work proficiently even with minumum<br>
+                        supervision.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links"onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Adobe Photoshop</span><br>Graphics | Layouts | Photo Manipulation</li>
+                            <li><span>Adobe Illustrator</span><br>Illustration | Logo Design</li>
+                            <li><span>Management</span><br>Social Media Management | Content Management</li>
+                            <li><span>Basic SEO</span><br>Search Engine Optimization</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Content Manager</span><br>
+                                Run <u><i>end-to-end the content generation pipeline</i></u> of AI-Generated Travel  
+                                Posters. (Including <i><u>Figma editing, mockup editing with photoshop, 
+                                Excel/Data entry works, SEO, and Sales</u></i>)<br>
+                                Robust <i><u>quality control</u></i> for poster outputs, ensuring products to always meet<br>
+                                and exceed customer expectations.<br>
+                                <i><u>Market research</u></i> to determine which posters customers want in the store.<br>
+                                Other tasks that arise in building the business
+                                </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Currently 2nd-year College Student</span><br>
+                                Bachelor of Science in Business Administration Major in Human Resource Management</li>
+                            <li><span>Senior High School</span><br>Science, Technology, Engineering, and Mathematics</li>
+                            <li><span>High School</span><br>Special Program in Journalism</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- ----------Services------------- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-pen-nib"></i>
+                    <h2>Illustration | Design</h2>
+                    <p>Transforming ideas into captivating visuals, While I may lack prior work experience
+                        I have the skills to make illustration and design bring creativity and 
+                        professionalism to every project, as I perform this task often times 
+                        for other reasons other than work, and continuously enhancing my skills."</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Photo | Video Editing</h2>
+                    <p>Skilled photo manipulation, editing, and video editing, including 
+                        presentations,  While I may have not enough work experience, I will 
+                        transform raw visuals to stand out elevating your content with 
+                        attention to detail, creativity, and professionalism, as I perform 
+                        this task often times for other reasons other than work, and 
+                        continuously enhancing my skills.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-list-check"></i>
+                    <h2>Management | Admin</h2>
+                    <p>Simplify your workload with my management and administrative services, 
+                        covering social media management, virtual assistance, content management, 
+                        and the likes, leveraging my ability to learn quickly and adapt effectively. 
+                        While I may lack prior work experience to some of these. I will help streamline 
+                        your operations and support your business needs.</p>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------portfolio----------------- -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Works</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img id="image" src="images/jordan.jpg">
+                    <div class="layer">
+                        <h3>Shoes Illustration Design</h3>
+                        <p>Illustrated using Adobe Illustration CS6. 
+                            Illustrated from 3d element from sketchfab.</p>
+                        <a href="#" onclick="toggleFullScreen()"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/burger.jpg">
+                    <div class="layer">
+                        <h3>Burger Illustration Design</h3>
+                        <p>Illustrated using Adobe Illustration CS6. 
+                            Illustrated from a sketch found in the internet.</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/shanghai.jpg">
+                    <div class="layer">
+                        <h3>Shanghai Illustration</h3>
+                        <p>Illustrated using Adobe Illustration CS6. 
+                            Illustrated from a sketch found in the internet.</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/cabha polo shirt.png">
+                    <div class="layer">
+                        <h3>Polo Shirt Design</h3>
+                        <p>Polo shirt design using Adobe Photoshop CS6. 
+                            Claw design and colors based on the school department</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/t shirt mockup 2.png">
+                    <div class="layer">
+                        <h3>T-shirt Design</h3>
+                        <p>T-shirt design using Adobe Photoshop CS6. 
+                            Samurai Pictures are AI generated images.</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/officer shirt white final for fiverr.png">
+                    <div class="layer">
+                        <h3>Polo Shirt Design</h3>
+                        <p>Polo shirt design using Adobe Photoshop CS6. 
+                            Colors are based on the school organization</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/lanyard presentation 2.png">
+                    <div class="layer">
+                        <h3>Lanyard Design</h3>
+                        <p>Lanyard Design using Adobe Photoshop CS6. 
+                            Colors are based on the school organization. 
+                            Some elements like the buildings are AI generated.</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Untitled-1-01.jpg">
+                    <div class="layer">
+                        <h3>Logo Design</h3>
+                        <p>Logo illustrated using Adobe Illustration CS6. 
+                            Illustrated from a sketch found in the internet.</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Untitled-1-02.jpg">
+                    <div class="layer">
+                        <h3>Logo Design</h3>
+                        <p>Logo illustrated using Adobe Illustration CS6. 
+                            Illustrated from a sketch found in the internet.</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/black friday (1).jpg">
+                    <div class="layer">
+                        <h3>Ads/Content Design</h3>
+                        <p>Ads or Content Design using Adobe Photoshop CS6. 
+                            Some elements are from the internet. </p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/job post 4.png">
+                    <div class="layer">
+                        <h3>Job Post Design</h3>
+                        <p>Ads or Content Design using Adobe Photoshop CS6. 
+                            Some elements are from the internet.</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/job post 5.png">
+                    <div class="layer">
+                        <h3>Job Post Design</h3>
+                        <p>Ads or Content Design using Adobe Photoshop CS6. 
+                            Some elements are from the internet.</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/job post.png">
+                    <div class="layer">
+                        <h3>Job Post Design</h3>
+                        <p>Ads or Content Design using Adobe Photoshop CS6. 
+                            Pictures are from Splash.</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Untitled (1).jpg">
+                    <div class="layer">
+                        <h3>Travel Posters</h3>
+                        <p>Travel posters are AI generated. 
+                            Cleaned, added grain, texts, and border using Figma.</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Untitled1 (1).jpg">
+                    <div class="layer">
+                        <h3>Travel Posters</h3>
+                        <p>Travel posters are AI generated. 
+                            Cleaned, added grain, texts, and border using Figma.</p>
+                    </div>
+                </div> 
+                <div class="work">
+                    <img src="images/athens black1.png">
+                    <div class="layer">
+                        <h3>Mockups</h3>
+                        <p>Travel poster from earlier photos edited for mockup on frame.</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/honolulu 3.png">
+                    <div class="layer">
+                        <h3>Mockups</h3>
+                        <p>Travel poster from earlier photos edited for mockup on frame.</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/japan 2.png">
+                    <div class="layer">
+                        <h3>Mockups</h3>
+                        <p>Travel poster from earlier photos edited for mockup on frame.</p>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------contact------------------ -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>ejdetorres1828143@gmail.com</p>
+                    <p><i class="fa-brands fa-telegram"></i><i class="fa-brands fa-square-whatsapp"></i></i>09486873870</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/elton.detorres.7"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/elton-john-de-torres-0049802a7/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/De Torres_Resume.jpg" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Kevin. Made with by <i class="fa-solid fa-heart"></i> Easy Tutorials</p>
+        </div>
+    </div>
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+
+    <script>
+    function toggleFullScreen(){
+        var image = document.getElementById("image");
+            image.requestFullscreen()
+        }
+    </script>
+    
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu")
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px"
+        }
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyrypLU-q0U1J6YVh0c8adb3doKQvLLJgN7KS1OzQAzvnSCpissf-zzfN6i6g-QLC6ytQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+    
+</body>
+</html>
